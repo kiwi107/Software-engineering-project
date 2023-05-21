@@ -1,0 +1,21 @@
+{% extends 'Home/base.html' %}
+
+{% block changes %}
+<div class = "login">  
+  
+    
+    <div class="shadow p-4 mb-5 bg-body rounded">  
+    <h1>Register</h1>  
+<br/>  
+         <form action="" method="post" >  
+             {% csrf_token %}  
+            
+                {{ Form.as_p }}  
+                  
+<br/>                      
+                <input type="submit" name="submit" value="Register" /> 
+                  
+        </form>  
+     </div>  
+</div>
+{% endblock %}
